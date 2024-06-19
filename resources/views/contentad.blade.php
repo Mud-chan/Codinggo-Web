@@ -25,7 +25,7 @@
             <h3>{{ $userName }}</h3>
             <span>{{ $userProfesi }}</span>
             <a href="{{ url('/profileadmin') }}" class="btn">View Profile</a>
-            <a href="{{ route('logoutad') }}" onclick="return confirm('Anda Yakin Ingin Logout?');" class="delete-btn">Log out</a>
+            <a href="{{ route('logoutad') }}" onclick="return confirm('Anda Yakin Ingin Log out?');" class="delete-btn">Log out</a>
         </div>
     </section>
 </header>
