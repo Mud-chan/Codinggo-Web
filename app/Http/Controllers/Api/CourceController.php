@@ -41,7 +41,7 @@ class CourceController etends Controller
             ->orWhere('jenis', "LIKE", "%$search%")
             ->orWhere("tingkatan", "LIKE", "%$search%")->get();
         $data->makeHidden(["tutor_id", 'date', 'jenis', 'tingkatan', "status"]);
-        return new DataResource($data->isNotEmpty(), $data->isNotEmpty() ? "Data ditemukan" : "Data Tidak Di Temukan", $data);
+        return new DataResource($data->isNotEmpty(), $data->isNotEmpty() ? "Data ditemukan" : "Data Tidak Ditemukan", $data);
     }
     protected function materiContent(Request $request)
     {
