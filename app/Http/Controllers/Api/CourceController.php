@@ -11,7 +11,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Resources\DataResource;
 use Illuminate\Support\Facades\Validator;
 
-class CourceController extends Controller
+class CourceController etends Controller
 {
     public function index()
     {
